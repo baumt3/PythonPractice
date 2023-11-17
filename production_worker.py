@@ -1,10 +1,10 @@
 # Importing the Employee class for inheritance
 import employee
 
-class production_worker(employee.Employee):
-    def __init__(self,name, employee_id, shift, hourly_pay_rate):
+class ProductionWorker(employee.Employee):
+    def __init__(self, name, employee_id, shift, hourly_pay_rate):
         # Call the constructor of the parent class (Employee) to initialize common attributes.
-        super().__init__(name, employee_id,)
+        super().__init__(name, employee_id)
     
         # Additional attributes specific to the production_worker class. 
         self.__shift = shift
@@ -19,9 +19,9 @@ class production_worker(employee.Employee):
         return self.__shift
 
     def set_hourly_pay_rate(self, hourly_pay_rate):
-        # Setter method to upate the hourly_pay_rate
+        # Setter method to update the hourly_pay_rate.
         self.__hourly_pay_rate = hourly_pay_rate
     
-    def get_hourly_pay_rate(self, hourly_pay_rate):
-        #Getter method to retrieve the hourly_pay_rate
+    def get_hourly_pay_rate(self):
+        # Getter method to retrieve the hourly_pay_rate.
         return self.__hourly_pay_rate
