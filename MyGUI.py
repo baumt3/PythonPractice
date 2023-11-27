@@ -18,6 +18,7 @@ class MyGUI:
         # Create the label widgets, associated with the StringVar objects.
         self.name_label = tkinter.Label(self.info_frame, textvariable=self.name_value)
         self.street_label = tkinter.Label(self.info_frame, textvariable=self.street_value)  
+        self.street_label = tkinter.Label(self.info_frame, textvariable=self.street_value)
         self.csz_label = tkinter.Label(self.info_frame, textvariable=self.csz_value)  
 
         # Pack the labels.
