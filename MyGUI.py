@@ -4,7 +4,7 @@ import tkinter
 class MyGUI:
     def __init__(self):
         # Create the main window.
-        self.main_window = tkinter.Tk()  # Corrected capitalization of 'Tk'
+        self.main_window = tkinter.Tk()  
 
         # Create StringVar objects to display name, street, and city-state-zip.
         self.name_value = tkinter.StringVar()
@@ -17,8 +17,8 @@ class MyGUI:
 
         # Create the label widgets, associated with the StringVar objects.
         self.name_label = tkinter.Label(self.info_frame, textvariable=self.name_value)
-        self.street_label = tkinter.Label(self.info_frame, textvariable=self.street_value)  # Corrected variable name
-        self.csz_label = tkinter.Label(self.info_frame, textvariable=self.csz_value)  # Corrected variable name
+        self.street_label = tkinter.Label(self.info_frame, textvariable=self.street_value)
+        self.csz_label = tkinter.Label(self.info_frame, textvariable=self.csz_value)  
 
         # Pack the labels.
         self.name_label.pack()
@@ -27,7 +27,7 @@ class MyGUI:
 
         # Create the button widgets.
         self.show_info_button = tkinter.Button(self.button_frame, text='Show Info', command=self.show)
-        self.quit_button = tkinter.Button(self.button_frame, text='Quit', command=self.main_window.destroy)  # Corrected 'test' to 'text'
+        self.quit_button = tkinter.Button(self.button_frame, text='Quit', command=self.main_window.destroy)  
 
         # Pack the buttons.
         self.show_info_button.pack(side='left')
@@ -42,6 +42,6 @@ class MyGUI:
 
     # Callback function for the Show Info button.
     def show(self):
-        self.name_value.set('Taylor Baum')  # Corrected typo in the name
+        self.name_value.set('Taylir Baum')  
         self.street_value.set('123 Walnut Street')
         self.csz_value.set('Asheville, NC 29999')
